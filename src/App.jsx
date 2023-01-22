@@ -15,7 +15,7 @@ const App = (props) => {
     setShowModalHandler(false);
   }
   return (
-    <div>
+    <CartProvider>
    
       {showModelHandler && <Cart hideModal={hideCartModalHander} />}
       <Header onShowModal={showCartModalHander} />
@@ -23,7 +23,7 @@ const App = (props) => {
             <Showmeals />
       </main>
 
-    </div>
+    </CartProvider>
 
   )
 

@@ -12,7 +12,7 @@ const AvailableMeals=()=>{
        {Dummy_data.map((data)=>{
             return <Card> 
             <MealsItem 
-            key={data.id}
+            key={Math.random().toFixed(5)}
             id={data.id}
             name={data.name}
             description={data.description}
